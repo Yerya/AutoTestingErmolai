@@ -3,10 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:unit": "vitest",
+    "test:web-api": "playwright test tests/api.test.ts",
+    "test:ui": "playwright test tests/ui.test.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.8.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
 }
